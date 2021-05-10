@@ -16,6 +16,13 @@ public class Admin {
 		//super(); 가 생략되어 있음
 	}
 	
+	//this의 용법 2가지
+	//1. 자기자신 객체 => this or this. => 위치는 매서드, 생성자 모두 사용
+	//2. 다른 생성자를 호출 => this(~) => 위치는 생성자에서만 사용 가능
+	public Admin(String id, String pwd, String email) {
+		this(id,pwd,email,0) ;
+	}
+
 	//생성자 ; 클래스 이름이랑 동일해야 됨, 그렇지 않으면 에러남
 	public Admin(String id, String pwd, String email, int level) {
 		//super(); 가 생략되어 있음
