@@ -9,6 +9,7 @@ public class StringBufferDemo {
 		System.out.println(s1.equals(s2));
 		System.out.println(s1);
 		
+		
 		String str1 = s1.toString();
 		String str2 = s2.toString();
 		

@@ -94,11 +94,13 @@ public class StringDemo {
 		System.out.println(m8.substring(m8.lastIndexOf("-")+1));
 		
 		
+		//숫자로 구성된 String => primitive data type로 변환시켜주는 메서드
 		int a1 = Integer.parseInt(m6.substring(0,1));
-		//이걸로 사용하면 없어보이니까
+		//이걸로 사용하면 없어보이고 데이터도 자꾸 쌓이므로
 		String m9 = 123+"";
 		//String.valueOf사용하기 
 		String m10 = String.valueOf(123);
+		System.out.println(m10);
 		
 		String m11 = m8.replace("-", "_");
 		System.out.println(m11);
