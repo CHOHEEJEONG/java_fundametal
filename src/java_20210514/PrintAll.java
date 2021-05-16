@@ -10,13 +10,13 @@ public class PrintAll {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-		File f = new File("C:\\Users\\user\\eclipse-workspace\\Java_Fundamental\\src");
+		File f = new File("C:\\Users\\chohe\\git\\java_fundametal\\src");
 		FileWriter fw = null;
 		FileReader fr = null;
 		BufferedReader br= null;
 		BufferedWriter bw= null;
 		String[] dirs = f.list();
-		fw = new FileWriter("C:\\Users\\user\\allprint.txt");
+		fw = new FileWriter("C:\\Users\\chohe\\allprint.txt");
 		bw = new BufferedWriter(fw);
 		for(String dir : dirs) {
 			File f1 = new File(f,dir);
