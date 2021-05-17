@@ -23,7 +23,7 @@ public class StaticMethodDemo {
 	
 	public static void m4() {
 		// static method에서는 static 변수와 static 매서드만 사용할 수 있음
-		//name ="홀길동";
+		//name ="홍길동";
 		interestRate = 4.3;
 		//m1();
 		m3();

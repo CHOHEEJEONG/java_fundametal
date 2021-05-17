@@ -3,13 +3,16 @@ package java_20210512;
 public class MathDemo {
 	public static void main(String[] args) {
 		
+		//올림
 		double d = Math.ceil(4.3);
 		System.out.println(d);
 		
+		//내림
 		d = Math.floor(4.9);
 		System.out.println(d);
 		
 		//float를 넣으면 int로 출력 
+		//반올림
 		int i = Math.round(2.6f);
 		System.out.println(i);
 
