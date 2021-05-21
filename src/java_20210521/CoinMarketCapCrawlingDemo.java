@@ -25,6 +25,8 @@ public class CoinMarketCapCrawlingDemo {
                     .userAgent("Mozilla")
                     .ignoreContentType(true)
                     .execute().body();
+			
+			System.out.println(jsonStr);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
