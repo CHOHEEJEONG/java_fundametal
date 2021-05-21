@@ -12,7 +12,8 @@ public class FileReaderWriterDemo {
 		
 		try {
 			fr = new FileReader("C:\\dev\\test\\2021\\05\\18\\FileDemo.java");
-			fw = new FileWriter("C:\\dev\\test\\2021\\05\\18\\FileDemo-copy.java");
+			//true가 없으면 지우고 다시 씀. 그런데 true를 쓰면 지우지 않고 이어서 쭉 씀
+			fw = new FileWriter("C:\\dev\\test\\2021\\05\\18\\FileDemo-copy.java",true);
 			
 			/*
 			int readChar = 0;
