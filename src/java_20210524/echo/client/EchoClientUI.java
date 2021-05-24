@@ -69,9 +69,10 @@ public class EchoClientUI implements ActionListener{
 		
 		
 		/********************************************************************/
-		jframe.add(jta, BorderLayout.CENTER);
+		jframe.add(jsp, BorderLayout.CENTER);
 		jframe.add(j1, BorderLayout.SOUTH);
 		jframe.add(j2, BorderLayout.NORTH);
+		jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		jframe.pack();
 		jframe.setResizable(true);
@@ -90,7 +91,7 @@ public class EchoClientUI implements ActionListener{
 	}
 	public static void main(String[] args) {
 		JFrame.setDefaultLookAndFeelDecorated(true);
-		new EchoClientUI("hey","192.168.0.28",3000).connect();
+		new EchoClientUI("hey","192.168.0.69",3000).connect();
 	}
 	@Override
 	public void actionPerformed(ActionEvent e) {
