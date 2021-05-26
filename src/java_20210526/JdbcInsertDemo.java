@@ -18,6 +18,7 @@ public class JdbcInsertDemo {
 		
 		Connection con = null;
 		PreparedStatement pstmt = null;
+		
 		try {
 			//2. 데이터베이스와 연결하는 connection 객체를 생성한다.
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/kpc", //url
@@ -26,7 +27,6 @@ public class JdbcInsertDemo {
 			System.out.println("데이터베이스 연결 성공");
 			
 			//3. SQL문을 전송할 수 있는 PreparedStatement 객체를 생성
-			
 			StringBuilder sql = new StringBuilder();
 			sql.append("INSERT INTO member(num, NAME, addr) VALUES(?, ?, ?)");
 			

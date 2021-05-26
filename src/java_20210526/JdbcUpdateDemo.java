@@ -14,13 +14,15 @@ public class JdbcUpdateDemo {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		
-		//2. 데이터베이스와 연결할 수 있는 Connection 객체를 생성
 		try {
+			//2. 데이터베이스와 연결할 수 있는 Connection 객체를 생성
 			con = DriverManager.getConnection("jdbc:mysql://localhost/kpc",
 					"kpc12","kpc1212");
+			
 			//3. SQL문을 전송할 수 있는 PreparedStatement 객체를 생성
 			StringBuilder sql = new StringBuilder();
 			sql.append("UPDATE member ");
