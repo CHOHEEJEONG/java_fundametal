@@ -47,7 +47,6 @@ public class JdbcUpdateDemo {
 			try {
 				//6. 모든자원을 반납한다.
 				if(con != null)	con.close();
-				if(pstmt != null)	con.close();
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
