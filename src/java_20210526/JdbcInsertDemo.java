@@ -47,7 +47,7 @@ public class JdbcInsertDemo {
 		} finally {
 			try {
 				if(con != null)	con.close();
-				if(pstmt != null)	con.close();
+				if(pstmt != null)pstmt.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}

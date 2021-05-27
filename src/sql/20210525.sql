@@ -353,3 +353,51 @@ FROM member;
 UPDATE member
 SET NAME = '두테르테1', addr = '필리핀1'
 WHERE num = 11;
+
+
+SELECT num, NAME, addr
+FROM member;
+
+DELETE FROM member
+WHERE num = '1';
+
+SELECT num, NAME, addr
+FROM member
+ORDER BY num deSC
+LIMIT 0, 2;
+
+
+DESC dept;
+SELECT deptno, dname, loc
+FROM dept;
+
+INSERT INTO dept(deptno, dname, loc) VALUES(50, 'Development', 'LA');
+
+DELETE FROM dept
+WHERE deptno = 50;
+
+UPDATE dept
+SET dname = 'development', loc = 'la'
+WHERE deptno = 50;
+
+SELECT deptno, dname, loc
+FROM dept
+ORDER BY deptno
+LIMIT 0,10;
+
+
+DESC emp;
+
+SELECT *
+FROM emp
+ORDER BY empno;
+
+INSERT INTO emp(empno, ename, job, mgr, hiredate, sal, comm, deptno) 
+VALUES(9003, 'KIM', 'MANAGER',7839 , CURDATE(), 50000, 40000, 30); 
+
+UPDATE emp
+SET ename= 'KIM1', job='MANAGER1' , mgr=1212 , hiredate= CURDATE(), sal=50001 , comm=40001 , deptno=40 
+WHERE empno= 9003;
+
+DELETE FROM emp
+WHERE empno= 9003;
