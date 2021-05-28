@@ -401,3 +401,15 @@ WHERE empno= 9003;
 
 DELETE FROM emp
 WHERE empno= 9003;
+
+SELECT empno, ename, job, mgr, date_format(hiredate, '%Y/%m/%d'), sal, nvl(comm,0), deptno
+FROM emp
+ORDER BY hiredate DESC
+LIMIT 0,5;
+
+
+
+
+
+
+
