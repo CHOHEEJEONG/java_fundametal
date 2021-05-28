@@ -1,5 +1,9 @@
 package java_20210514;
+//집
 //C:\\Users\\chohe\\git\\java_fundametal\\src
+//교육원
+//C:\\Users\\user\\eclipse-workspace\\Java_Fundamental\\src
+
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -21,7 +25,7 @@ public class PrintAll {
 		try {
 			fr = new FileReader(f);
 			br = new BufferedReader(fr);
-			fw = new FileWriter("C:\\Users\\chohe\\allprint.txt",true);
+			fw = new FileWriter("C:\\Users\\user\\allprint.txt",true);
 			bw = new BufferedWriter(fw);
 			String readLine = null;
 			while((readLine = br.readLine()) != null) {
@@ -31,7 +35,6 @@ public class PrintAll {
 			bw.flush();
 			
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
 			try {
@@ -60,7 +63,7 @@ public class PrintAll {
 	public static void main(String[] args) throws IOException {
 		
 		ArrayList<String> listFile = new ArrayList<String>(); 
-		scanDir("C:\\Users\\chohe\\git\\java_fundametal\\src", listFile); 
+		scanDir("C:\\Users\\user\\eclipse-workspace\\Java_Fundamental\\src", listFile); 
 		for(String path : listFile) { 
 			print(path); 
 			System.out.println(path);
