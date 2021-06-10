@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-public class SocketScanDEmo {
+public class SocketScanDemo {
 	public static void main(String[] args) {
 		Socket socket = null;
 		for(int port=1; port<=1024; port++) {
